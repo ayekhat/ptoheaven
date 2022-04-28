@@ -10,19 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 </head>
 
 <body>
+    <!-- navigation bar -->
     <div class="navigation">
-        <div class="logo">
-            PTO <i class="fa-solid fa-camera camera animate__animated animate__bounce"></i> Heaven
+        <div class="logo"> <a href=""><span>PTO</span> <i class="fa-solid fa-camera camera"></i>
+                <span>Heaven</span></a>
         </div>
         <div class="nav-links">
-            <div class="home">Home</div>
-            <div class="home">Collection</div>
-            <div class="home">Services</div>
-            <div class="home">About</div>
-            <div class="home">Contact</div>
+            <div class="home"> <a href="#">Home</a> </div>
+            <div class="home"> <a href="#">Collection</a> </div>
+            <div class="home"> <a href="#">Services</a> </div>
+            <div class="home"> <a href="#">About</a> </div>
+            <div class="home"> <a href="#">Contact</a> </div>
         </div>
         <div class="toggle-theme">
             <div class="moon-container">
@@ -30,6 +32,205 @@
             </div>
         </div>
     </div>
+
+    <!-- cover -->
+    <div class="cover">
+        <div class="left-cover">
+
+            <div class="slide-left one">
+                <div class="box">
+                    <h1>Best Photo Studio</h1>
+                    <h2>A HIGH QUALITY PHOTOGRAPHY</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-left two">
+                <div class="box">
+                    <h1>Top Expertise</h1>
+                    <h2>WITH EXPERIENCE COMES TRUST</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-left three">
+                <div class="box">
+                    <h1>Wedding Stills</h1>
+                    <h2>CREATING QUALITY PHOTOS</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+            </div>
+
+            <button class="up-btn" onclick="plusSlides(1)"><i class="fas fa-arrow-up " style="color:gray"></i></button>
+            <button class="down-btn" onclick="minusSlides(-1)"><i class="fas fa-arrow-down "
+                    style="color:gray"></i></button>
+        </div>
+        <div id="right-cover" class="right-cover">
+            <div class="slide-right right" style="background-image:url('./images/r1.jpg')">
+            </div>
+
+            <div class="slide-right right" style="background-image:url('./images/r4.jpg')">
+
+            </div>
+
+            <div class="slide-right right" style="background-image:url('./images/r2.jpg')">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Album -->
+    <h1 style="font-size:30px;text-align:center;margin-top: 50px">Our Albums</h1>
+    <h2 style="text-align:center;margin-top: 20px;margin-bottom: 25px;">Nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat sunt in culpa qui official.</h2>
+    <section class="card-list">
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/r3.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm-1.jpg" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    Jeff Delaney
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/r1.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm2.jpg" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    Zheng Zhilong
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/r2.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm3.jpg" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    Francis Drake
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/r4.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm4.jpg" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    Edward Teach
+                </div>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/background.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm5.webp" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    William Kidd
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/cover3.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm6.webp" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    William Kidd
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <p>Sep 11th 2020</p>
+            </header>
+            <img src="./images/cover2.jpg" alt="">
+            <div class="card-author">
+                <a class="author-avatar" href="#">
+                    <img src="./images/cm8.jpg" />
+                </a>
+                <svg class="half-circle" viewBox="0 0 106 57">
+                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                </svg>
+
+                <div class="author-name">
+                    <div class="author-name-prefix">Photographer</div>
+                    William Kidd
+                </div>
+            </div>
+        </article>
+
+
+
+    </section>
+    <script src="app.js"></script>
 </body>
 
 </html>
