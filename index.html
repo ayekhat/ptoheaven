@@ -64,7 +64,8 @@
                 </div>
             </div>
 
-            <button class="up-btn" onclick="plusSlides(1)"><i class="fas fa-arrow-up " style="color:gray"></i></button>
+            <button class="up-btn" onclick="plusImageSlides(1)"><i class="fas fa-arrow-up "
+                    style="color:gray"></i></button>
             <button class="down-btn" onclick="minusSlides(-1)"><i class="fas fa-arrow-down "
                     style="color:gray"></i></button>
         </div>
@@ -86,8 +87,8 @@
     <h1 style="font-size:30px;text-align:center;margin-top: 50px">Our Albums</h1>
     <h2 style="text-align:center;margin-top: 20px;margin-bottom: 25px;">Nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat sunt in culpa qui official.</h2>
-    <section class="card-list">
-        <article class="card">
+    <section class="card-list" id="blur">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -107,7 +108,7 @@
             </div>
         </article>
 
-        <article class="card">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -126,7 +127,7 @@
                 </div>
             </div>
         </article>
-        <article class="card">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -146,7 +147,7 @@
             </div>
         </article>
 
-        <article class="card">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -167,7 +168,7 @@
         </article>
 
 
-        <article class="card">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -187,7 +188,7 @@
             </div>
         </article>
 
-        <article class="card">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -207,7 +208,7 @@
             </div>
         </article>
 
-        <article class="card">
+        <article class="card" id="card">
             <header class="card-header">
                 <p>Sep 11th 2020</p>
             </header>
@@ -226,10 +227,45 @@
                 </div>
             </div>
         </article>
-
-
-
     </section>
+    <!-- slide show -->
+    <!-- <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="./images/background.jpg" style="width:100%;height: 350px;">
+            <button class="text" id="close" onclick="closeGallery()">close</button>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="./images/background1.jpg" style="width:100%;height: 350px;">
+            <button class="text" id="close" onclick="closeGallery()">close</button>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="./images/background2.jpg" style="width:100%;height: 350px;">
+            <button class="text" id="close" onclick="closeGallery()">close</button>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="./images/cm-1.jpg" style="width:100%;height: 350px;">
+            <button class="text" id="close" onclick="closeGallery()">close</button>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="./images/cover1.jpg" style="width:100%;height: 350px;">
+            <button class="text" id="close" onclick="closeGallery()">close</button>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="./images/cover2.jpg" style="width:100%;height: 350px;">
+            <div class="text" id="close" onclick="closeGallery()" id="text">Close</div> -->
+    <!-- <button class="text" id="close" onclick="closeGallery()">close</button>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>  -->
     <script src="app.js"></script>
 </body>
 
